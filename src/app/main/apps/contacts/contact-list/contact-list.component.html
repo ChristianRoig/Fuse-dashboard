@@ -27,6 +27,16 @@
         </mat-cell>
     </ng-container>
 
+    <!-- CUIT Column - ->
+    <ng-container matColumnDef="cuit">
+        <mat-header-cell *matHeaderCellDef fxHide fxShow.gt-sm>CUIT</mat-header-cell>
+        <mat-cell *matCellDef="let contact" fxHide fxShow.gt-sm>
+            <p class="email text-truncate">
+                20-18625855-6
+            </p>
+        </mat-cell>
+    </ng-container-->
+
     <!-- Email Column -->
     <ng-container matColumnDef="email">
         <mat-header-cell *matHeaderCellDef fxHide fxShow.gt-sm>Correo</mat-header-cell>

@@ -19,7 +19,7 @@
                     shopping_basket
                 </mat-icon>
                 <span class="logo-text h1" [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
-                    Products
+                    Productos
                 </span>
             </div>
             <!-- / APP TITLE -->
@@ -31,7 +31,7 @@
                     <mat-icon class="secondary-text">search</mat-icon>
                 </label>
                 <mat-form-field floatLabel="never" fxFlex="1 0 auto">
-                    <input id="search" matInput #filter placeholder="Search">
+                    <input id="search" matInput #filter placeholder="Buscar">
                 </mat-form-field>
             </div>
             <!-- / SEARCH -->
@@ -39,7 +39,7 @@
             <button mat-raised-button
                     [routerLink]="'/apps/e-commerce/products/new'"
                     class="add-product-button fuse-white my-12 mt-sm-0">
-                <span>ADD NEW PRODUCT</span>
+                <span>NUEVO</span>
             </button>
 
         </div>
@@ -75,7 +75,7 @@
 
                 <!-- Name Column -->
                 <ng-container matColumnDef="name">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header>Name</mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header>Nombre</mat-header-cell>
                     <mat-cell *matCellDef="let product">
                         <p class="text-truncate">{{product.name}}</p>
                     </mat-cell>
@@ -83,7 +83,7 @@
 
                 <!-- Category Column -->
                 <ng-container matColumnDef="category">
-                    <mat-header-cell *matHeaderCellDef fxHide mat-sort-header fxShow.gt-md>Category</mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef fxHide mat-sort-header fxShow.gt-md>Categoria</mat-header-cell>
                     <mat-cell *matCellDef="let product" fxHide fxShow.gt-md>
                         <p class="category text-truncate">
                             {{product.categories[0]}}
@@ -93,7 +93,7 @@
 
                 <!-- Price Column -->
                 <ng-container matColumnDef="price">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header fxHide fxShow.gt-xs>Price</mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header fxHide fxShow.gt-xs>Precio</mat-header-cell>
                     <mat-cell *matCellDef="let product" fxHide fxShow.gt-xs>
                         <p class="price text-truncate">
                             {{product.priceTaxIncl | currency:'USD':'symbol'}}
@@ -103,7 +103,7 @@
 
                 <!-- Quantity Column -->
                 <ng-container matColumnDef="quantity">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header fxHide fxShow.gt-sm>Quantity</mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header fxHide fxShow.gt-sm>Stock</mat-header-cell>
                     <mat-cell *matCellDef="let product" fxHide fxShow.gt-sm>
 
                         <span class="quantity-indicator text-truncate"
@@ -118,7 +118,7 @@
 
                 <!-- Active Column -->
                 <ng-container matColumnDef="active">
-                    <mat-header-cell *matHeaderCellDef mat-sort-header fxHide fxShow.gt-xs>Active</mat-header-cell>
+                    <mat-header-cell *matHeaderCellDef mat-sort-header fxHide fxShow.gt-xs>Activo</mat-header-cell>
                     <mat-cell *matCellDef="let product" fxHide fxShow.gt-xs>
                         <mat-icon *ngIf="product.active" class="active-icon green-600 s-16">check</mat-icon>
                         <mat-icon *ngIf="!product.active" class="active-icon red-500 s-16">close</mat-icon>
@@ -138,8 +138,8 @@
             <mat-paginator #paginator
                            [length]="dataSource.filteredData.length"
                            [pageIndex]="0"
-                           [pageSize]="10"
-                           [pageSizeOptions]="[5, 10, 25, 100]">
+                           [pageSize]="20"
+                           [pageSizeOptions]="[20, 100, 500]">
             </mat-paginator>
 
         </div>

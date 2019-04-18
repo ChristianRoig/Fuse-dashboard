@@ -17,7 +17,7 @@
                           [@animate]="{value:'*',params:{delay:'50ms',scale:'0.2'}}">account_box
                 </mat-icon>
                 <span class="logo-text h1" [@animate]="{value:'*',params:{delay:'100ms',x:'-25px'}}">
-                    Contacts
+                    Clientes
                 </span>
             </div>
 
@@ -30,7 +30,7 @@
                 <mat-icon>search</mat-icon>
             </label>
             <mat-form-field mat-no-float class="m-0" floatLabel="never">
-                <input matInput [formControl]="searchInput" id="search" placeholder="Search for anything">
+                <input matInput [formControl]="searchInput" id="search" placeholder="Buscar">
             </mat-form-field>
         </div>
         <!-- / SEARCH -->
@@ -75,7 +75,7 @@
 </div>
 
 <!-- ADD CONTACT BUTTON -->
-<button mat-fab class="accent" id="add-contact-button" (click)="newContact()" aria-label="add contact"
+<button mat-fab class="accent" id="add-contact-button" (click)="newContact()" aria-label="agregar contacto"
         [@animate]="{value:'*', params:{delay:'300ms',scale:'.2'}}">
     <mat-icon>person_add</mat-icon>
 </button>
