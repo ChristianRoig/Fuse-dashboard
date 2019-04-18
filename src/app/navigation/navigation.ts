@@ -2,11 +2,43 @@ import { FuseNavigation } from '@fuse/types';
 
 export const navigation: FuseNavigation[] = [
     {
+        id       : 'pymex',
+        title    : 'PymeX',
+        type     : 'group',
+        icon     : 'apps',
+        children : [
+            {
+                id        : 'orders',
+                title     : 'Comprobantes',
+                type      : 'item',
+                icon      : 'font_download',
+                url       : '/apps/e-commerce/orders',
+                exactMatch: true
+            },
+            {
+                id       : 'contacts',
+                title    : 'Contactos',
+                type     : 'item',
+                icon     : 'account_box',
+                url      : '/apps/contacts'
+            },
+            {
+                id        : 'products',
+                title     : 'Articulos',
+                type      : 'item',
+                icon      : 'shopping_basket',
+                url       : '/apps/e-commerce/products',
+                exactMatch: true
+            }
+        ]
+    },
+    {
         id       : 'applications',
         title    : 'Applications',
         translate: 'NAV.APPLICATIONS',
         type     : 'group',
         icon     : 'apps',
+        hidden  : true,
         children : [
             {
                 id       : 'dashboards',
@@ -167,6 +199,7 @@ export const navigation: FuseNavigation[] = [
         title   : 'Pages',
         type    : 'group',
         icon    : 'pages',
+        hidden  : true,
         children: [
             {
                 id      : 'authentication',
@@ -356,6 +389,7 @@ export const navigation: FuseNavigation[] = [
         title   : 'User Interface',
         type    : 'group',
         icon    : 'web',
+        hidden  : true,
         children: [
             {
                 id   : 'forms',
@@ -569,6 +603,7 @@ export const navigation: FuseNavigation[] = [
         title   : 'Angular Material Elements',
         type    : 'group',
         icon    : 'layers',
+        hidden  : true,
         children: [
             {
                 id      : 'form-controls',
@@ -835,6 +870,7 @@ export const navigation: FuseNavigation[] = [
         title   : 'Documentation',
         icon    : 'import_contacts',
         type    : 'group',
+        hidden  : true,
         children: [
             {
                 id   : 'changelog',

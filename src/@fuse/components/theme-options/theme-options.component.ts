@@ -133,13 +133,13 @@ export class FuseThemeOptionsComponent implements OnInit, OnDestroy
         // Add customize nav item that opens the bar programmatically
         const customFunctionNavItem = {
             'id'      : 'custom-function',
-            'title'   : 'Custom Function',
+            'title'   : 'Configuración',
             'type'    : 'group',
             'icon'    : 'settings',
             'children': [
                 {
                     'id'      : 'customize',
-                    'title'   : 'Customize',
+                    'title'   : 'Personalizar',
                     'type'    : 'item',
                     'icon'    : 'settings',
                     'function': () => {

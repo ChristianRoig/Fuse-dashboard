@@ -19,14 +19,14 @@
                 <mat-icon>arrow_drop_down</mat-icon>
             </button>
             <mat-menu #selectMenu="matMenu">
-                <button mat-menu-item (click)="selectAll()">Select all</button>
-                <button mat-menu-item (click)="deselectAll()">Deselect all</button>
+                <button mat-menu-item (click)="selectAll()">Marcar todos</button>
+                <button mat-menu-item (click)="deselectAll()">Desmarcar todos</button>
             </mat-menu>
 
         </div>
 
         <div class="multi-select-actions">
-            <button mat-icon-button (click)="deleteSelectedContacts()" aria-label="delete selected">
+            <button mat-icon-button (click)="deleteSelectedContacts()" aria-label="borrar marcados">
                 <mat-icon>delete</mat-icon>
             </button>
         </div>
