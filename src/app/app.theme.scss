@@ -111,8 +111,6 @@ $typography: mat-typography-config(
 @import "src/app/main/pages/faq/faq.theme";
 @import "src/app/main/pages/knowledge-base/knowledge-base.theme";
 
-@import "src/app/main/documentation/components/cards/cards.theme";
-
 @import "src/app/main/angular-material-elements/example-viewer/example-viewer.theme";
 
 // Define a mixin for easier access
@@ -157,9 +155,6 @@ $typography: mat-typography-config(
     @include profile-timeline-theme($theme);
     @include faq-theme($theme);
     @include knowledge-base-theme($theme);
-
-    // Docs
-    @include docs-components-cards-theme($theme);
 
     // Example Viewer
     @include example-viewer-theme($theme);
