@@ -1,22 +1,22 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 
-import { ProjectDashboardDb } from 'app/fake-db/dashboard-project';
-import { AnalyticsDashboardDb } from 'app/fake-db/dashboard-analytics';
 import { CalendarFakeDb } from 'app/fake-db/calendar';
 import { ECommerceFakeDb } from 'app/fake-db/e-commerce';
 import { AcademyFakeDb } from 'app/fake-db/academy';
-import { MailFakeDb } from 'app/fake-db/mail';
-import { ChatFakeDb } from 'app/fake-db/chat';
 import { FileManagerFakeDb } from 'app/fake-db/file-manager';
 import { ContactsFakeDb } from 'app/fake-db/contacts';
 import { TodoFakeDb } from 'app/fake-db/todo';
-import { ScrumboardFakeDb } from 'app/fake-db/scrumboard';
 import { InvoiceFakeDb } from 'app/fake-db/invoice';
 import { ProfileFakeDb } from 'app/fake-db/profile';
-import { SearchFakeDb } from 'app/fake-db/search';
-import { FaqFakeDb } from 'app/fake-db/faq';
-import { KnowledgeBaseFakeDb } from 'app/fake-db/knowledge-base';
-import { IconsFakeDb } from 'app/fake-db/icons';
+//import { ProjectDashboardDb } from 'app/fake-db/dashboard-project';
+//import { AnalyticsDashboardDb } from 'app/fake-db/dashboard-analytics';
+//import { MailFakeDb } from 'app/fake-db/mail';
+//import { ChatFakeDb } from 'app/fake-db/chat';
+//import { ScrumboardFakeDb } from 'app/fake-db/scrumboard';
+//import { SearchFakeDb } from 'app/fake-db/search';
+//import { FaqFakeDb } from 'app/fake-db/faq';
+//import { KnowledgeBaseFakeDb } from 'app/fake-db/knowledge-base';
+//import { IconsFakeDb } from 'app/fake-db/icons';
 import { ChatPanelFakeDb } from 'app/fake-db/chat-panel';
 import { QuickPanelFakeDb } from 'app/fake-db/quick-panel';
 
@@ -26,9 +26,9 @@ export class FakeDbService implements InMemoryDbService
     {
         return {
             // Dashboards
-            'project-dashboard-projects' : ProjectDashboardDb.projects,
-            'project-dashboard-widgets'  : ProjectDashboardDb.widgets,
-            'analytics-dashboard-widgets': AnalyticsDashboardDb.widgets,
+            //'project-dashboard-projects' : ProjectDashboardDb.projects,
+            //'project-dashboard-widgets'  : ProjectDashboardDb.widgets,
+            //'analytics-dashboard-widgets': AnalyticsDashboardDb.widgets,
 
             // Calendar
             'calendar': CalendarFakeDb.data,
@@ -43,15 +43,15 @@ export class FakeDbService implements InMemoryDbService
             'academy-course'    : AcademyFakeDb.course,
 
             // Mail
-            'mail-mails'  : MailFakeDb.mails,
-            'mail-folders': MailFakeDb.folders,
-            'mail-filters': MailFakeDb.filters,
-            'mail-labels' : MailFakeDb.labels,
+            //'mail-mails'  : MailFakeDb.mails,
+            //'mail-folders': MailFakeDb.folders,
+            //'mail-filters': MailFakeDb.filters,
+            //'mail-labels' : MailFakeDb.labels,
 
             // Chat
-            'chat-contacts': ChatFakeDb.contacts,
-            'chat-chats'   : ChatFakeDb.chats,
-            'chat-user'    : ChatFakeDb.user,
+            //'chat-contacts': ChatFakeDb.contacts,
+            //'chat-chats'   : ChatFakeDb.chats,
+            //'chat-user'    : ChatFakeDb.user,
 
             // File Manager
             'file-manager': FileManagerFakeDb.files,
@@ -66,7 +66,7 @@ export class FakeDbService implements InMemoryDbService
             'todo-tags'   : TodoFakeDb.tags,
 
             // Scrumboard
-            'scrumboard-boards': ScrumboardFakeDb.boards,
+            //'scrumboard-boards': ScrumboardFakeDb.boards,
 
             // Invoice
             'invoice': InvoiceFakeDb.invoice,
@@ -77,17 +77,17 @@ export class FakeDbService implements InMemoryDbService
             'profile-about'        : ProfileFakeDb.about,
 
             // Search
-            'search-classic': SearchFakeDb.classic,
-            'search-table'  : SearchFakeDb.table,
+            //'search-classic': SearchFakeDb.classic,
+            //'search-table'  : SearchFakeDb.table,
 
             // FAQ
-            'faq': FaqFakeDb.data,
+            //'faq': FaqFakeDb.data,
 
             // Knowledge base
-            'knowledge-base': KnowledgeBaseFakeDb.data,
+            //'knowledge-base': KnowledgeBaseFakeDb.data,
 
             // Icons
-            'icons': IconsFakeDb.icons,
+            //'icons': IconsFakeDb.icons,
 
             // Chat Panel
             'chat-panel-contacts' : ChatPanelFakeDb.contacts,
