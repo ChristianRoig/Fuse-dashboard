@@ -16,11 +16,12 @@ import { InvoiceModernModule } from 'app/main/pages/invoices/modern/modern.modul
 import { InvoiceCompactModule } from 'app/main/pages/invoices/compact/compact.module';
 import { MaintenanceModule } from 'app/main/pages/maintenance/maintenence.module';
 import { ProfileModule } from 'app/main/pages/profile/profile.module';
-/*import { ComingSoonModule } from 'app/main/pages/coming-soon/coming-soon.module';
-import { PricingModule } from 'app/main/pages/pricing/pricing.module';
-import { SearchModule } from 'app/main/pages/search/search.module';
-import { FaqModule } from 'app/main/pages/faq/faq.module';
-import { KnowledgeBaseModule } from 'app/main/pages/knowledge-base/knowledge-base.module';*/
+
+//import { ComingSoonModule } from 'app/main/pages/coming-soon/coming-soon.module';
+//import { PricingModule } from 'app/main/pages/pricing/pricing.module';
+//import { SearchModule } from 'app/main/pages/search/search.module';
+//import { FaqModule } from 'app/main/pages/faq/faq.module';
+//import { KnowledgeBaseModule } from 'app/main/pages/knowledge-base/knowledge-base.module';
 
 @NgModule({
     imports: [
@@ -48,7 +49,7 @@ import { KnowledgeBaseModule } from 'app/main/pages/knowledge-base/knowledge-bas
         InvoiceCompactModule,
 
         // Maintenance
-        MaintenanceModule,
+        MaintenanceModule, 
 
         // Pricing
         //PricingModule,
