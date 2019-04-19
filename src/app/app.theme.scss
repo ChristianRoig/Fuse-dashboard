@@ -110,8 +110,8 @@ $typography: mat-typography-config(
 @import "src/app/main/pages/profile/tabs/timeline/timeline.theme";
 @import "src/app/main/pages/faq/faq.theme";
 @import "src/app/main/pages/knowledge-base/knowledge-base.theme";
-
-@import "src/app/main/angular-material-elements/example-viewer/example-viewer.theme";
+//@ import "src/app/main/documentation/components/cards/cards.theme";
+//@ import "src/app/main/angular-material-elements/example-viewer/example-viewer.theme";
 
 // Define a mixin for easier access
 @mixin components-theme($theme) {
@@ -157,7 +157,7 @@ $typography: mat-typography-config(
     @include knowledge-base-theme($theme);
 
     // Example Viewer
-    @include example-viewer-theme($theme);
+    //@ include example-viewer-theme($theme);
 }
 
 // -----------------------------------------------------------------------------------------------------
