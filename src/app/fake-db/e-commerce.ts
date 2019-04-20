@@ -3,11 +3,11 @@ export class ECommerceFakeDb
     public static products = [
         {
             'id'              : '1',
-            'name'            : 'Printed Dress',
+            'name'            : 'Queso Untable',
             'handle'          : 'printed-dress',
             'description'     : 'Officia amet eiusmod eu sunt tempor voluptate laboris velit nisi amet enim proident et. Consequat laborum non eiusmod cillum eu exercitation. Qui adipisicing est fugiat eiusmod esse. Sint aliqua cupidatat pariatur mollit ad est proident reprehenderit. Eiusmod adipisicing laborum incididunt sit aliqua ullamco.',
             'categories'      : [
-                'Dresses',
+                'Lacteos',
                 'Women'
             ],
             'tags'            : [
@@ -19,52 +19,40 @@ export class ECommerceFakeDb
                     'id'  : 1,
                     'url' : 'assets/images/ecommerce/product-image-placeholder.png',
                     'type': 'image'
-                },
+                }               
+            ],
+            'priceTaxExcl'    : 39.309,
+            'priceTaxIncl'    : 50.24,
+            'taxRate'         : 10,
+            'comparedPrice'   : 49.90,
+            'quantity'        : 3,
+            'sku'             : 'A445BV',
+            'width'           : '22cm',
+            'height'          : '24cm',
+            'depth'           : '15cm',
+            'weight'          : '3kg',
+            'extraShippingFee': 3.00,
+            'active'          : true
+        },  
+        {
+            'id'              : '2',
+            'name'            : 'Leche Entera',
+            'handle'          : 'printed-dress',
+            'description'     : 'Officia amet eiusmod eu sunt tempor voluptate laboris velit nisi amet enim proident et. Consequat laborum non eiusmod cillum eu exercitation. Qui adipisicing est fugiat eiusmod esse. Sint aliqua cupidatat pariatur mollit ad est proident reprehenderit. Eiusmod adipisicing laborum incididunt sit aliqua ullamco.',
+            'categories'      : [
+                'Lacteos',
+                'Women'
+            ],
+            'tags'            : [
+                'dress',
+                'printed'
+            ],
+            'images'          : [
                 {
-                    'id'  : 2,
-                    'url' : 'assets/images/etc/air-balloons.jpg',
+                    'id'  : 1,
+                    'url' : 'assets/images/ecommerce/product-image-placeholder.png',
                     'type': 'image'
-                },
-                {
-                    'id'  : 3,
-                    'url' : 'assets/images/etc/avenue.jpg',
-                    'type': 'image'
-                },
-                {
-                    'id'  : 4,
-                    'url' : 'assets/images/etc/cactus.jpg',
-                    'type': 'image'
-                },
-                {
-                    'id'  : 5,
-                    'url' : 'assets/images/etc/early-sunrise.jpg',
-                    'type': 'image'
-                },
-                {
-                    'id'  : 6,
-                    'url' : 'assets/images/etc/mountain-lake.jpg',
-                    'type': 'image'
-                },
-                {
-                    'id'  : 7,
-                    'url' : 'assets/images/etc/road-trip.jpg',
-                    'type': 'image'
-                },
-                {
-                    'id'  : 8,
-                    'url' : 'assets/images/etc/snow.jpg',
-                    'type': 'image'
-                },
-                {
-                    'id'  : 9,
-                    'url' : 'assets/images/etc/tropical-beach.jpg',
-                    'type': 'image'
-                },
-                {
-                    'id'  : 10,
-                    'url' : 'assets/images/etc/mountain-sunset.jpg',
-                    'type': 'image'
-                }
+                }               
             ],
             'priceTaxExcl'    : 9.309,
             'priceTaxIncl'    : 10.24,
@@ -78,8 +66,261 @@ export class ECommerceFakeDb
             'weight'          : '3kg',
             'extraShippingFee': 3.00,
             'active'          : true
+        }  
+    ];
+
+    public static orders = [
+        {
+            'id'             : 1,
+            'reference'      : '00001321',
+            'subtotal'       : '12239.97',
+            'tax'            : '877.44',
+            'discount'       : '-10.17',
+            'total'          : '67743.83',
+            'date'           : '2015/04/25 02:07:59',
+            'customer'       : {
+                'id'             : 1,
+                'firstName'      : 'La Anonima',
+                'lastName'       : '',
+                'avatar'         : 'assets/images/avatars/anonima.jpg',
+                'company'        : 'Saois',
+                'jobTitle'       : 'Digital Archivist',
+                'email'          : 'abbott@withinpixels.com',
+                'phone'          : '+1-202-555-0175',
+                'invoiceAddress' : {
+                    'address': '704 6th Ave, New York, NY 10010, USA',
+                    'lat'    : 40.7424739,
+                    'lng'    : -73.99283919999999
+                },
+                'shippingAddress': {
+                    'address': '377 E South Omaha Bridge Rd, Council Bluffs, IA 51501, USA',
+                    'lat'    : 41.2183223,
+                    'lng'    : -95.8420876
+                }
+            },
+            'products'       : [
+                {
+                    'id'      : 1,
+                    'name'    : 'Printed Dress',
+                    'price'   : '10.24',
+                    'quantity': 1,
+                    'total'   : '10.24',
+                    'image'   : 'assets/images/ecommerce/product-image-placeholder.png'
+                },
+                {
+                    'id'      : 2,
+                    'name'    : 'Green Skirt',
+                    'price'   : '24.62',
+                    'quantity': 1,
+                    'total'   : '24.62',
+                    'image'   : 'assets/images/ecommerce/product-image-placeholder.png'
+                },
+                {
+                    'id'      : 3,
+                    'name'    : 'Printed Dress',
+                    'price'   : '49.29',
+                    'quantity': 1,
+                    'total'   : '49.29',
+                    'image'   : 'assets/images/ecommerce/product-image-placeholder.png'
+                }
+            ],
+            'status'         : [
+                {
+                    'id'   : 13,
+                    'name' : 'Pagado',
+                    'color': 'green-100',
+                    'date' : '2016/04/03 10:06:18'
+                },
+                {
+                    'id'   : 1,
+                    'name' : 'Awaiting check payment',
+                    'color': 'blue-500',
+                    'date' : '2015/03/17 18:28:37'
+                }
+            ],
+            'payment'        : {
+                'transactionId': '2a894b9e',
+                'amount'       : '73.31',
+                'method'       : 'Transferencia Bancaria',
+                'date'         : '2016/02/23 15:50:23'
+            },
+            'shippingDetails': [
+                {
+                    'tracking': '',
+                    'carrier' : 'TNT',
+                    'weight'  : '10.44',
+                    'fee'     : '7.00',
+                    'date'    : '2015/04/10 07:03:52'
+                }
+            ]
         },
         {
+            'id'             : 2,
+            'reference'      : '00001322',
+            'subtotal'       : '12239.97',
+            'tax'            : '877.44',
+            'discount'       : '-10.17',
+            'total'          : ' 23573.31',
+            'date'           : '2015/04/25 02:07:59',
+            'customer'       : {
+                'id'             : 1,
+                'firstName'      : 'Efectivo Si',
+                'lastName'       : '',
+                'avatar'         : 'assets/images/avatars/efectivo_si.png',
+                'company'        : 'Saois',
+                'jobTitle'       : 'Digital Archivist',
+                'email'          : 'abbott@withinpixels.com',
+                'phone'          : '+1-202-555-0175',
+                'invoiceAddress' : {
+                    'address': '704 6th Ave, New York, NY 10010, USA',
+                    'lat'    : 40.7424739,
+                    'lng'    : -73.99283919999999
+                },
+                'shippingAddress': {
+                    'address': '377 E South Omaha Bridge Rd, Council Bluffs, IA 51501, USA',
+                    'lat'    : 41.2183223,
+                    'lng'    : -95.8420876
+                }
+            },
+            'products'       : [
+                {
+                    'id'      : 1,
+                    'name'    : 'Printed Dress',
+                    'price'   : '10.24',
+                    'quantity': 1,
+                    'total'   : '10.24',
+                    'image'   : 'assets/images/ecommerce/product-image-placeholder.png'
+                },
+                {
+                    'id'      : 2,
+                    'name'    : 'Green Skirt',
+                    'price'   : '24.62',
+                    'quantity': 1,
+                    'total'   : '24.62',
+                    'image'   : 'assets/images/ecommerce/product-image-placeholder.png'
+                },
+                {
+                    'id'      : 3,
+                    'name'    : 'Printed Dress',
+                    'price'   : '49.29',
+                    'quantity': 1,
+                    'total'   : '49.29',
+                    'image'   : 'assets/images/ecommerce/product-image-placeholder.png'
+                }
+            ],
+            'status'         : [
+                {
+                    'id'   : 13,
+                    'name' : 'Pendiente',
+                    'color': 'red-100',
+                    'date' : '2016/04/03 10:06:18'
+                },
+                {
+                    'id'   : 1,
+                    'name' : 'Awaiting check payment',
+                    'color': 'blue-500',
+                    'date' : '2015/03/17 18:28:37'
+                }
+            ],
+            'payment'        : {
+                'transactionId': '2a894b9e',
+                'amount'       : '73.31',
+                'method'       : 'Efectivo',
+                'date'         : '2016/02/23 15:50:23'
+            },
+            'shippingDetails': [
+                {
+                    'tracking': '',
+                    'carrier' : 'TNT',
+                    'weight'  : '10.44',
+                    'fee'     : '7.00',
+                    'date'    : '2015/04/10 07:03:52'
+                }
+            ]
+        }
+        
+    ];
+        
+    public static products_ori = [
+            {
+                'id'              : '1',
+                'name'            : 'Printed Dress',
+                'handle'          : 'printed-dress',
+                'description'     : 'Officia amet eiusmod eu sunt tempor voluptate laboris velit nisi amet enim proident et. Consequat laborum non eiusmod cillum eu exercitation. Qui adipisicing est fugiat eiusmod esse. Sint aliqua cupidatat pariatur mollit ad est proident reprehenderit. Eiusmod adipisicing laborum incididunt sit aliqua ullamco.',
+                'categories'      : [
+                    'Dresses',
+                    'Women'
+                ],
+                'tags'            : [
+                    'dress',
+                    'printed'
+                ],
+                'images'          : [
+                    {
+                        'id'  : 1,
+                        'url' : 'assets/images/ecommerce/product-image-placeholder.png',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 2,
+                        'url' : 'assets/images/etc/air-balloons.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 3,
+                        'url' : 'assets/images/etc/avenue.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 4,
+                        'url' : 'assets/images/etc/cactus.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 5,
+                        'url' : 'assets/images/etc/early-sunrise.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 6,
+                        'url' : 'assets/images/etc/mountain-lake.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 7,
+                        'url' : 'assets/images/etc/road-trip.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 8,
+                        'url' : 'assets/images/etc/snow.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 9,
+                        'url' : 'assets/images/etc/tropical-beach.jpg',
+                        'type': 'image'
+                    },
+                    {
+                        'id'  : 10,
+                        'url' : 'assets/images/etc/mountain-sunset.jpg',
+                        'type': 'image'
+                    }
+                ],
+                'priceTaxExcl'    : 9.309,
+                'priceTaxIncl'    : 10.24,
+                'taxRate'         : 10,
+                'comparedPrice'   : 19.90,
+                'quantity'        : 3,
+                'sku'             : 'A445BV',
+                'width'           : '22cm',
+                'height'          : '24cm',
+                'depth'           : '15cm',
+                'weight'          : '3kg',
+                'extraShippingFee': 3.00,
+                'active'          : true
+            },
+            {
             'id'              : '2',
             'name'            : 'Green Skirt',
             'handle'          : 'green-skirt',
@@ -1563,7 +1804,7 @@ export class ECommerceFakeDb
         }
     ];
 
-    public static orders = [
+    public static orders_ori = [
         {
             'id'             : 1,
             'reference'      : '70d4d7d0',
