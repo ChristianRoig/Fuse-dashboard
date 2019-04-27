@@ -1,6 +1,7 @@
 export class ContactsFakeDb
 {
-    public static contacts = [
+    // Clientes
+    public static contacts_c = [
         {
             'id'      : '5725a680606588342058356d',
             'name'    : '',
@@ -123,6 +124,65 @@ export class ContactsFakeDb
             'email'   : 'info@adunce.com.ar',
             'phone'   : '249-415-0141',
             'address' : 'Gral. Pinto 399, Tandil',
+            'birthday': null,
+            'notes'   : ''
+        }
+    ];
+
+    // Heroes
+    public static contacts = [
+        {
+            'id'      : '5725a6806065883420583563',
+            'name'    : 'Capitan',
+            'lastName': 'America',
+            'avatar'  : 'assets/images/avatars/cap_amer.png',
+            'nickname': 'Efectivo SI',
+            'company' : 'Empresa',
+            'jobTitle': 'Financiero',
+            'email'   : 'info@efectivo_si.com',
+            'phone'   : '11-2555-0141',
+            'address' : 'Rivadavia 1243, CABA',
+            'birthday': null,
+            'notes'   : ''
+        },         {
+            'id'      : '5725a68060658834205844d',
+            'name'    : '',
+            'lastName': 'Spiderman',
+            'avatar'  : 'assets/images/avatars/spiderman.jpg',
+            'nickname': 'Efectivo SI',
+            'company' : 'Empresa',
+            'jobTitle': 'Financiero',
+            'email'   : 'info@grupofava.com.ar',
+            'phone'   : '262-432-0418',
+            'address' : 'Av. Colon 1438, Mar del Plata',
+            'birthday': null,
+            'notes'   : ''
+        },
+        {
+            'id'      : '5725a680606588342058356d',
+            'name'    : '',
+            'lastName': 'Hulk',
+            'avatar'  : 'assets/images/avatars/hulk.jpeg',
+            'nickname': 'AnsiGirl',
+            'company' : 'Standard',
+            'jobTitle': 'Supermercado',
+            'email'   : 'info@laanonima.com',
+            'phone'   : '11-2555-0141',
+            'address' : 'Paseo Colon 437 Piso 8, CABA',
+            'birthday': null,
+            'notes'   : ''
+        },
+        {
+            'id'      : '5725a680b3249760ea21de52',
+            'name'    : '',
+            'lastName': 'Batman',
+            'avatar'  : 'assets/images/avatars/batman.jpg',
+            'nickname': 'Casimiro',
+            'company' : 'Empresa',
+            'jobTitle': 'Gastronomia',
+            'email'   : 'info@casimiro.com',
+            'phone'   : '262-555-0175',
+            'address' : 'Av. Pedro Luro 499, Mar del Plata',
             'birthday': null,
             'notes'   : ''
         }
